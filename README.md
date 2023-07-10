@@ -1,7 +1,7 @@
 # Crypto-Data
-A Simple Framework for collect data from the Binance Exchange websockets API.
+A library for fetching market data from the Binance Exchange WebSockets written in Go.
 
-Data feed avaiable  for 
+Data feeds are available  for 
 1) Trades
 2) Tickers
 3) MiniTickers
@@ -20,7 +20,7 @@ Data feed avaiable  for
   c, err := collector.NewCollector(errChannel,"","")
   if(err != nil){panic(err)}
   
-  // ALL Currenices
+  // ALL Currencies
   //Tickers
   c.CheckError(c.CollectTickers());
   
